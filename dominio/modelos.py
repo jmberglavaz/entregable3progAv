@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from decimal import Decimal
+from decimal import Decimal, ROUND_HALF_UP
 from typing import Optional, List
 
 @dataclass
@@ -37,7 +37,12 @@ class Compra:
     promociones_aplicadas: List[int]   # códigos de promoción
     importe_total: Decimal
 
+# Constantes
 OPERADOR_IGUAL = "="
 OPERADOR_MAYOR_IGUAL = ">="
 DECIMALES_PRECIO = 2
-REDONDEO = "ROUND_HALF_UP"   # usar decimal.ROUND_HALF_UP
+# Usamos la constante real de Decimal para redondear
+REDONDEO = ROUND_HALF_UP 
+
+# Sentinel para actualizaciones parciales
+NO_CAMBIAR = object()
