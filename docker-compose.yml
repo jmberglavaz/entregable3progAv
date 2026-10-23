@@ -1,0 +1,16 @@
+services:
+  menu:
+    build: .
+    stdin_open: true
+    tty: true
+    command: python3 main.py
+
+  gui:
+    build: .
+    ports:
+      - "8501:8501"
+    command: streamlit run app.py --server.address=0.0.0.0 --server.headless=true
+
+  tests:
+    build: .
+    command: python3 -m pytest tests/ -v
