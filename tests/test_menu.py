@@ -28,7 +28,7 @@ def _texto(out):
 def test_salir():
     out, pr = _capturar()
     ejecutar_menu(FakeServicePoblado(), input_fn=_inputs("0"), print_fn=pr)
-    assert "Chau." in out
+    assert "Saludos!" in out
 
 
 def test_opcion_invalida():
