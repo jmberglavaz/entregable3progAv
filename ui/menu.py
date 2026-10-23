@@ -21,7 +21,7 @@ def ejecutar_menu(service, input_fn=input, print_fn=print):
         print_fn(MENU)
         opcion = input_fn("Opción: ").strip()
         if opcion == "0":
-            print_fn("Chau.")
+            print_fn("Saludos!")
             return
         elif opcion == "1":
             _mantenimiento(service, input_fn, print_fn)

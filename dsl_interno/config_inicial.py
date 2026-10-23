@@ -33,7 +33,7 @@ def cargar_configuracion_inicial(service: SupermercadoService) -> None:
             .descuento(20)
         .promocion(2)
             .descuento(25)
-            .cuando_producto(3)
+            .cuando_producto(3).cantidad_igual(1)
             .cuando_producto(4).cantidad_igual(2)
             .nombre("2 pizzas + refresco")
             
