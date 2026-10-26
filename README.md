@@ -20,3 +20,5 @@ Para GUI (opcional):
     docker compose run --rm menu    # menú de consola
     docker compose up gui           # GUI en http://localhost:8501
     docker compose run --rm tests   # correr tests
+
+El informe está en la carpeta principal.

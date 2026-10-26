@@ -128,7 +128,7 @@ class SupermercadoService:
         # Convertimos a lista de tuplas para el motor
         items_finales = list(items_agrupados.items())
         
-        # Instanciamos el motor pasándole listas (como pide su interfaz)
+        # Instanciamos el motor pasándole listas
         motor = Motor_Compras(list(self._productos.values()), list(self._promociones.values()))
         compra = motor.aplicar(items_finales)
         

@@ -681,7 +681,7 @@ def pantalla_productos():
         return
 
     # Chunkear en estantes de 4 productos
-    PRODUCTOS_POR_ESTANTE = 7
+    PRODUCTOS_POR_ESTANTE = 6
     estantes = [
         prods[i:i + PRODUCTOS_POR_ESTANTE]
         for i in range(0, len(prods), PRODUCTOS_POR_ESTANTE)

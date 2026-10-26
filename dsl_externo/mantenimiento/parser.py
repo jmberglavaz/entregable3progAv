@@ -23,7 +23,7 @@ comando: agregar_producto
 
 // ==== Productos ====
 
-agregar_producto:    "AGREGAR"    "PRODUCTO" INT campo_producto* "FIN"
+agregar_producto:    "AGREGAR"    "PRODUCTO" INT campo_producto* "FIN" // campo_producto* permite cualquier orden
 actualizar_producto: "ACTUALIZAR" "PRODUCTO" INT campo_producto* "FIN"
 eliminar_producto:   "ELIMINAR"   "PRODUCTO" INT
 
@@ -34,7 +34,7 @@ campo_categoria_prod: "CATEGORIA" STRING
 
 // ==== Promociones ====
 
-agregar_promocion:    "AGREGAR"    "PROMOCION" INT elemento_promocion* "FIN"
+agregar_promocion:    "AGREGAR"    "PROMOCION" INT elemento_promocion* "FIN" // elemento_promocion* permite cualquier orden
 actualizar_promocion: "ACTUALIZAR" "PROMOCION" INT elemento_promocion* "FIN"
 eliminar_promocion:   "ELIMINAR"   "PROMOCION" INT
 
